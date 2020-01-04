@@ -25,11 +25,11 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'sagi_artifact1'
+    artifactName: 'my-app'
     downloadPath: '$(System.ArtifactsDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'sagi_artifact1'
+    ArtifactName: 'my-app'
     publishLocation: 'Container'
