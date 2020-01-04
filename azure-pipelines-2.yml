@@ -21,8 +21,15 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'compile package'
 
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'sagi_artifact1'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'sagi_artifact'
+    ArtifactName: 'sagi_artifact1'
     publishLocation: 'Container'
