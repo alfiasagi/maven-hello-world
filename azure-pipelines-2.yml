@@ -23,7 +23,8 @@ steps:
 
 - task: MavenAuthenticate@0
   inputs:
-    artifactsFeeds: 'sagialfia'
+    artifactsFeeds: sagialfia
+
 
 
 - task: Maven@3
