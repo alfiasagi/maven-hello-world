@@ -19,11 +19,11 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    goals: 'package deploy'
 
 - task: MavenAuthenticate@0
   inputs:
-    artifactsFeeds: 'sagi'
+    artifactsFeeds: 'sagialfia'
 
 
 - task: PublishBuildArtifacts@1
