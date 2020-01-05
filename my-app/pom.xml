@@ -119,9 +119,8 @@
 	  </snapshots>
 	</repository>
    </repositories>
-	
   <distributionManagement>
-       <repository>
+      <repository>
 	  <id>sagi</id>
 	  <url>https://pkgs.dev.azure.com/sagialfia/devops_excerize/_packaging/sagi/maven/v1</url>
 	  <releases>
@@ -130,6 +129,6 @@
 	  <snapshots>
 	    <enabled>true</enabled>
 	  </snapshots>
-	</repository>
+      </repository>
   </distributionManagement>	
 </project>
